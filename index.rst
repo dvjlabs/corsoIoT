@@ -27,12 +27,9 @@ RPI stuffs
    
    experiences/01_wiringpi
    experiences/02_gpio
+   experiences/03_breadboard
+   experiences/10_led
+   experiences/20_analog_PWM
+   experiences/30_buzzer
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Servizi su RPI
-   
-   services/01_HTTP
-   services/02_DNS
-   services/03_DHCP
 
