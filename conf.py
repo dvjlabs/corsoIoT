@@ -14,15 +14,20 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
+# oggi instead of today: there is another variabile called "today"
+oggi = datetime.date.today()
+year = oggi.strftime("%Y")
+ver = oggi.strftime("%Y%m%d")
 
 # -- Project information -----------------------------------------------------
 
 project = 'Corso IoT'
-copyright = '2019-2020, dvjlabs team (CC BY-NC-SA 3.0)'
+copyright = '2019-2021, dvjlabs team (CC BY-NC-SA 3.0)'
 author = 'dvjlabs'
 
 # The full version, including alpha/beta/rc tags
-version = 'latest'
+version = ver
 release = 'latest'
 
 
@@ -50,7 +55,7 @@ language = 'it'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build']
 
 # code highlights
 pygments_style = 'sphinx'
@@ -62,4 +67,13 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
 

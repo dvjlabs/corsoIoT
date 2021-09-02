@@ -28,8 +28,3 @@ RPI stuffs
    experiences/01_wiringpi
    experiences/02_gpio
    experiences/03_breadboard
-   experiences/10_led
-   experiences/20_analog_PWM
-   experiences/30_buzzer
-
-
